@@ -29,7 +29,26 @@ window.addEventListener('load', () => {
 
         task_content_element.appendChild(task_input_element);
 
+        const task_actions_element = document.createElement("div");
+        task_actions_element.classList.add("actions");
+
+        const task_edit_element = document.createElement("button");
+        task_edit_element.classList.add("edit");
+        task_edit_element.innerHTML = "Edit";
+
+        const task_delete_element = document.createElement("button");
+        task_delete_element.classList.add("delete");
+        task_delete_element.innerHTML = "Delete";
+
+        task_actions_element.appendChild(task_edit_element);
+        task_actions_element.appendChild(task_delete_element);
+
+        task_element.appendChild(task_actions_element);
+
+
         list_element.appendChild(task_element);
+
+        input.value = "";
 
     }) 
 })
