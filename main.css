@@ -144,7 +144,8 @@ main {
 }
 
 .task .actions .edit {
-    color: var(--pink);
+
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
