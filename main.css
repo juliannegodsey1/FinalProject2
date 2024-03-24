@@ -3,7 +3,7 @@
     --darker: #1F2937;
     --darkest: #111827;
     --gray: #6B7280;
-    --light: #EEEEEE;
+    --light: #EEE;
     --pink: #EC4899;
     --purple: #8B5CF6;
 }
@@ -53,7 +53,7 @@ input, button {
     background-color: var(--darker);
     padding: 1rem;
     border-radius: 1rem;
-    margin-right: 1 rem;
+    margin-right: 1rem;
     color: var(--light);
     font-size: 1.25rem;
 }
@@ -82,9 +82,9 @@ input, button {
 }
 
 main {
-    flex: 1 1 0%;
+    flex: 1 1 0%
     padding: 2rem 1rem;
-    max-width: 800;
+    max-width: 800px;
     width: 100%;
     margin: 0 auto;
 }
@@ -117,11 +117,15 @@ main {
     transition: 0.4s;
 }
 
+#tasks .task .content {
+    flex: 1 1 0%
+}
+
 #tasks .task .content .text:not(:read-only) {
     color: var(--pink);
 }
 
-#tasks .task .action {
+#tasks .task .actions {
     display: flex;
     margin: 0 -0.5rem;
 }
@@ -144,7 +148,6 @@ main {
 }
 
 .task .actions .edit {
-
   background-image: linear-gradient(to right, var(--pink), var(--purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

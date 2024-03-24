@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
 
         const task = input.value;
 
-        if(!task) {
+        if (!task) {
             alert("Please fill out the task");
             return;
         }
@@ -49,6 +49,20 @@ window.addEventListener('load', () => {
         list_element.appendChild(task_element);
 
         input.value = "";
+
+
+        task_edit_element.addEventListener('click', () => {
+            if(task_edit_element.innerText.toLowerCase() == "edit") {
+                task_input_element.removeAttribute("readonly");
+                task_input_element.focus();
+                task_edit_element.innerText = "Save";
+            } else {
+                task_input_element.setAttribute("readonly", "readonly");
+                task_edit_element.innerText = "Edit";
+            }
+
+
+        })
 
     }) 
 })
