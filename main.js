@@ -97,12 +97,11 @@ window.addEventListener('load', () => {
             }
         });
         
-
         task_delete_element.addEventListener('click', () => {
             list_element.removeChild(task_element);
             removeTask(task);
         });
-
+        
         return task_element;
     }
 });
